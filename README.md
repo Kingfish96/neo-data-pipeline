@@ -14,6 +14,8 @@ This project is a **data engineering pipeline** that fetches NASA Near-Earth Obj
 
 ## Project Structure
 
+```
+
 neo-data-pipeline/
 ├── data/
 │ └── raw/
@@ -33,7 +35,7 @@ neo-data-pipeline/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
+```
 
 ## Setup Instructions
 
