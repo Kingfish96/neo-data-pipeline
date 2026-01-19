@@ -41,26 +41,35 @@ neo-data-pipeline/
 
 1. Create a virtual environment and activate it:
 
-    python -m venv venv
-    venv\Scripts\activate  # Windows
+```
+python -m venv venv
+venv\Scripts\activate       # Windows
+source venv/bin/activate    # macOS / Linux
+```
 
 2. Install dependencies:
-
-    pip install -r requirements.txt
+```
+pip install -r requirements.txt
+```
 
 3. Copy .env.example to .env and fill in your PostgreSQL credentials:
 
-    copy .env.example .env
-
+```
+copy .env.example .env
+```
 
 4. Run the ETL pipeline:
 
-    python ingestion/load_neo_data.py
+```
+python ingestion/load_neo_data.py
+```
 
 5. Verify data in PostgreSQL:
 
-    -SELECT COUNT(*) FROM asteroids;
-    -SELECT COUNT(*) FROM close_approaches;
+```
+SELECT COUNT(*) FROM asteroids;
+SELECT COUNT(*) FROM close_approaches;
+```   
 
 ## Logging
 
